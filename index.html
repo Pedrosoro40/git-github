@@ -5,12 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
     <style>
-        h1{
+        body{
+            background-color: lightskyblue;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 600px;
+            margin: auto;
+        }
+        article{
             text-align: center;
+            color: black;
+            font-weight: bolder;
+            font-size: 30px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-flow: row nowrap;
+            
+        }
+        article>h1{
+            text-align: center;
+            color: black;
+            font-weight: bolder;
+            font-size: 30px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-flow: row nowrap;
+
+        }
+        article::after{
+            content: '🎉';
+            color: lightskyblue;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            flex-flow: row nowrap;
         }
     </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <main>
+        <article>
+            <h1>Hello World</h1>
+        </article>
+    </main>
 </body>
 </html>
